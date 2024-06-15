@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hand Cricket Game</h1>
+        <div class="game-container">
+            <div class="scoreboard">
+                <p>Player Score: <span id="playerScore">0</span></p>
+                <p>Computer Score: <span id="computerScore">0</span></p>
+            </div>
+            <div class="number-display">
+                <div>Player's Choice: <span id="playerChoice">?</span></div>
+                <div>Computer's Choice: <span id="computerChoice">?</span></div>
+            </div>
+            <div class="buttons">
+                <button class="guess-btn" onclick="play(1)">1</button>
+                <button class="guess-btn" onclick="play(2)">2</button>
+                <button class="guess-btn" onclick="play(3)">3</button>
+                <button class="guess-btn" onclick="play(4)">4</button>
+                <button class="guess-btn" onclick="play(5)">5</button>
+                <button class="guess-btn" onclick="play(6)">6</button>
+            </div>
+            <p id="result" class="result"></p>
+            <button class="toggle-btn" onclick="toggleBatting()">Switch to Bowling</button>
+        </div>
+    </div>
+    <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+    <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
